@@ -1,3 +1,3 @@
 # BMICalculator
 
-A description of this package.
+This is a Swift Package Manager Test repository.
