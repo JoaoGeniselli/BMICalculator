@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum BodyStatus : CaseIterable {
+public enum BodyStatus : CaseIterable {
     case unknown
     case underweight
     case normal

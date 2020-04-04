@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Result : Equatable {
+public enum Result : Equatable {
     case success(bodyMassIndex: Float, bodyStatus: BodyStatus)
     case error(reason: CalculatorError)
 }

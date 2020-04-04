@@ -1,4 +1,4 @@
-class BMICalculator {
+public class BMICalculator {
     
     func calculate(forWeightInKg weight: Float, andHeighInMeters height: Float) -> Result {
         guard isValidWeight(weight), isValidHeight(height) else {

@@ -7,6 +7,6 @@
 
 import Foundation
 
-enum CalculatorError {
+public enum CalculatorError {
     case invalidMetrics
 }
