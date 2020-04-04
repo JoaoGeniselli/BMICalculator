@@ -1,6 +1,10 @@
 public class BMICalculator {
     
-    func calculate(forWeightInKg weight: Float, andHeighInMeters height: Float) -> Result {
+    public init() {
+        
+    }
+    
+    public func calculate(forWeightInKg weight: Float, andHeighInMeters height: Float) -> Result {
         guard isValidWeight(weight), isValidHeight(height) else {
             return Result.error(reason: .invalidMetrics)
         }

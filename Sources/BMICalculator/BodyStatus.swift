@@ -16,7 +16,7 @@ public enum BodyStatus : CaseIterable {
     case obeseII
     case obeseIII
     
-    func range() -> (lower: Float, upper: Float) {
+    public func range() -> (lower: Float, upper: Float) {
         switch self {
         case .underweight:
             return (lower: 0.0, upper: 18.5)
@@ -35,12 +35,12 @@ public enum BodyStatus : CaseIterable {
         }
     }
     
-    func rangeContains(_ bmi: Float) -> Bool {
+    public func rangeContains(_ bmi: Float) -> Bool {
         let r = range()
         return bmi >= r.lower && bmi < r.upper
     }
     
-    static func by(bmi: Float) -> BodyStatus {
+    public static func by(bmi: Float) -> BodyStatus {
         let filtered = BodyStatus.allCases.filter {
             (status) -> Bool in status.rangeContains(bmi)
         }
